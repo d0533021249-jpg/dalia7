@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Web — Sign Up</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Acme Web</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container form-page">
+    <h1>Create account</h1>
+    <form id="signupForm" novalidate>
+      <label for="full-name">Full name</label>
+      <input id="full-name" name="name" type="text" required minlength="3" placeholder="Your full name" />
+
+      <label for="signup-email">Email</label>
+      <input id="signup-email" name="email" type="email" required placeholder="you@example.com" />
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" name="password" type="password" required minlength="6" placeholder="At least 6 characters" />
+
+      <button type="submit" class="btn">Sign up</button>
+      <p class="small">Already have an account? <a href="signin.html">Sign in</a></p>
+    </form>
+    <div id="signup-msg" class="form-msg" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-5"></span> Acme Web. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
